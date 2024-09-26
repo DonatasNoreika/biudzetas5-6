@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Įrašai{% endblock %}
+
+{% block content %}
+<h3>Biudžeto įrašai:</h3>
+<ul class="list-group">
+{% for irasas in irasai %}
+  <li class="list-group-item">{{ irasas }}</li>
+{% endfor %}
+</ul>
+<hr>
+{% endblock %}

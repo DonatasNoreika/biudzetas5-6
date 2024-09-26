@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Naujas įrašas{% endblock %}
+
+{% block content %}
+<h3>Naujas įrašas:</h3>
+<form action="#" method="post">
+    <div class="mb-3 mt-3">
+    <label for="suma" class="form-label">Suma:</label>
+    <input type="number" class="form-control" id="suma" name="suma">
+  </div>
+    <div class="mb-3 mt-3">
+    <label for="tipas" class="form-label">Tipas:</label>
+    <select id="tipas" name="tipas" class="form-select">
+      <option value="pajamos">Pajamos</option>
+      <option value="išlaidos">Išlaidos</option>
+    </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Įvesti</button>
+</form>
+{% endblock %}
